@@ -83,7 +83,7 @@ INVENTORY_LOCATION=/opt/oracle/oraInventory
 # Specify value as the following to select all the languages.
 # Example : SELECTED_LANGUAGES=all_langs  
 #------------------------------------------------------------------------------
-SELECTED_LANGUAGES=en,fr
+SELECTED_LANGUAGES=zh_CN,en
 
 #------------------------------------------------------------------------------
 # Specify the complete path of the Oracle Home.
@@ -157,7 +157,7 @@ oracle.install.db.DBA_GROUP=dba
 # The OPER_GROUP is the OS group which is to be granted OSOPER privileges.
 # The value to be specified for OSOPER group is optional.
 #------------------------------------------------------------------------------
-oracle.install.db.OPER_GROUP=dba
+oracle.install.db.OPER_GROUP=oinstall
 
 #------------------------------------------------------------------------------
 # Specify the cluster node names selected during the installation.
@@ -186,7 +186,7 @@ oracle.install.db.racOneServiceName=
 #   - GENERAL_PURPOSE/TRANSACTION_PROCESSING             
 #   - DATA_WAREHOUSE                                
 #------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.type=
+oracle.install.db.config.starterdb.type=GENERAL_PURPOSE
 
 #------------------------------------------------------------------------------
 # Specify the Starter Database Global Database Name. 
@@ -226,7 +226,7 @@ oracle.install.db.config.starterdb.memoryOption=true
 # on the system.
 # Example: oracle.install.db.config.starterdb.memoryLimit=512
 #------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.memoryLimit=
+oracle.install.db.config.starterdb.memoryLimit=2048
 
 #------------------------------------------------------------------------------
 # This variable controls whether to load Example Schemas onto
@@ -341,14 +341,14 @@ oracle.install.db.config.starterdb.storageType=
 #
 # Applicable only when oracle.install.db.config.starterdb.storage=FILE_SYSTEM_STORAGE 
 #-------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.fileSystemStorage.dataLocation=
+oracle.install.db.config.starterdb.fileSystemStorage.dataLocation=FILE_SYSTEM_STORAGE
 
 #-------------------------------------------------------------------------------
 # Specify the backup and recovery location.
 #
 # Applicable only when oracle.install.db.config.starterdb.storage=FILE_SYSTEM_STORAGE 
 #-------------------------------------------------------------------------------
-oracle.install.db.config.starterdb.fileSystemStorage.recoveryLocation=
+oracle.install.db.config.starterdb.fileSystemStorage.recoveryLocation=FILE_SYSTEM_STORAGE
 
 #-------------------------------------------------------------------------------
 # Specify the existing ASM disk groups to be used for storage.
@@ -449,7 +449,7 @@ COLLECTOR_SUPPORTHUB_URL=
 #   - OFFLINE_UPDATES
 #   - SKIP_UPDATES
 #------------------------------------------------------------------------------
-oracle.installer.autoupdates.option=
+oracle.installer.autoupdates.option=SKIP_UPDATES
 #------------------------------------------------------------------------------
 # In case MYORACLESUPPORT_DOWNLOAD option is chosen, specify the location where
 # the updates are to be downloaded.
